@@ -1,9 +1,6 @@
 const API_URL = `https://statsapi.web.nhl.com/api/v1/teams`;
 const container = document.querySelector(`#root`);
 
-// useState
-// useEffect
-
 const App = () => {
   const [teamsList, setTeams] = React.useState([]);
   // console.log(`hello`);
@@ -23,7 +20,7 @@ const App = () => {
         {teamsList.map((team) => {
           return <li>
             {team.name}
-            <img alt={team.name} src="" />
+            {/* <img alt={team.name} src="" /> */}
           </li>;
         })}
       </ul>
